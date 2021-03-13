@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Laravel Movie App | Developed By Mithu')
+@section('title', 'Movie App | Developed By Mithu')
 @section('movies-active', 'active')
 
 
