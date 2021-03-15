@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title',  'TV Show | ' .$tvShow['name'])
+@section('title',  $tvShow['name'])
 
 @section('content')
   <section class="tvShow-info border-b border-gray-600">

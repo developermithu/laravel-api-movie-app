@@ -15,12 +15,12 @@ x-data="{ isOpen: false }"
                 $refs.search.focus();
             }
         "
-     @focus="isOpen = true"
      @keydown="isOpen = true"
      @keydown.escape.window="isOpen = false"
      @keydown.shift.tab="isOpen = false"
      >
-
+     {{-- @focus="isOpen = true" --}}
+     
      <div wire:loading class="spinner top-0 right-0 mt-4 mr-4"></div>
 
         @if (strlen($search) != '')

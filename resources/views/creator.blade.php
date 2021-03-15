@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Aboute Creator')
+@section('title', 'About Creator')
 @section('creator-active', 'active')
 
 @section('content')

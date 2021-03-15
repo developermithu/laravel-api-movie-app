@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Popular Actors | Developed By Mithu')
+@section('title', 'Popular Actors')
 @section('actor-active', 'active')
 
 
