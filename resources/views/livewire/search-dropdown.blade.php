@@ -1,6 +1,6 @@
 <div 
 class="flex flex-col md:flex-row items-center" 
-x-data="{ isOpen: true }" 
+x-data="{ isOpen: false }" 
 @click.away="isOpen = false"
 >
     <div class="mt-3 md:mt-0 relative">
