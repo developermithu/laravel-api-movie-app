@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title') </title>
-
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     {{-- Tailwind CSS --}}
     <link rel="stylesheet" href="/css/app.css">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
@@ -27,9 +25,15 @@
     <div class=" container mx-auto flex flex-col md:flex-row items-center justify-between p-4 ">
        <ul class="flex flex-col md:flex-row items-center">
            <li class=" hover:text-gray-200">
-               <a href="/">
-                   <ion-icon name="film-outline" size="large"></ion-icon> 
-                   <div style="margin-top: -34px; margin-left:38px">MovieApp</div>
+               <a href="/" class="flex items-center justify-center space-x-2">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
+                      </svg>
+                </div>
+                   <div>
+                    <span class=" text-yellow-500">HM</span>ovies
+                </div>
                </a>
            </li>
            <li class=" md:ml-16 mt-2 md:mt-0">

@@ -10,7 +10,7 @@
         <div class="md:ml-24">
             <h2 class=" text-4xl font-semibold">{{$movie['title']}} ({{ \Carbon\Carbon::parse($movie['release_date'])->format('Y') }})</h2>
             <div class="flex flex-wrap items-center text-gray-400 font-sans">
-                <ion-icon name="star" class=" text-yellow-500"></ion-icon>
+                <span><x-star-icon></x-star-icon></span>
                 <span class="ml-1">Star</span>
                 <span class="ml-1">{{$movie['vote_average'] * 10}}%</span>
                 <span class="mx-2">|</span>
@@ -47,9 +47,9 @@
                 <div class="mt-12">
                         <button
                         @click="isOpen = true"
-                         class="px-5 py-3 rounded bg-yellow-700 hover:bg-yellow-800 transition ease-in-out duration-150">
-                            <ion-icon name="play-forward-outline"></ion-icon>
-                            <span class="ml-1">Play Trailer</span>
+                         class="px-5 py-3 rounded bg-yellow-700 hover:bg-yellow-800 transition ease-in-out duration-150 flex items-center space-x-2">
+                         <span><x-play-icon></x-play-icon></span>
+                            <span class="ml-1 font-semibold">Play Trailer</span>
                         </button>
                 </div>
                 @endif
@@ -122,7 +122,9 @@
                             <div class=" container mx-auto lg:px-32 rounded-lg overflow-y-auto">
                                 <div class=" bg-gray-900 rounded">
                                     <div class="flex justify-end pr-4 pt-2">
-                                        <button @click="isOpen = false" @keydown.escape.window="isOpen=false" class="text-lg font-bold text-gray-300 hover:text-gray-600"> Close </button>
+                                        <button @click="isOpen = false" @keydown.escape.window="isOpen=false" class="text-lg font-bold text-gray-300 hover:text-gray-600"> 
+                                           <x-close-icon></x-close-icon>
+                                        </button>
                                     </div>
                                     <div class="modal-body px-8 py-8">
                                         <img src="{{'https://image.tmdb.org/t/p/original/' .$image['file_path']}}" alt="file_path">

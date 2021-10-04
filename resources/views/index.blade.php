@@ -18,7 +18,7 @@
                     <div class="mt-2">
                         <a  href="{{route('movies.show', $movie['id'])}}" class=" text-lg hover:text-gray-200">{{$movie['title']}}</a>
                         <div class="flex items-center text-gray-400 font-sans text-sm">
-                            <ion-icon name="star" class=" text-yellow-500"></ion-icon>
+                            <span><x-star-icon></x-star-icon></span>
                             <span class="ml-1">Star</span> 
                             <span class="ml-1">{{$movie['vote_average'] *10 }}%</span>
                             <span class="mx-2">|</span>
@@ -47,7 +47,7 @@
                     <div class="mt-2">
                         <a  href="{{route('movies.show', $movie['id'])}}" class=" text-lg hover:text-gray-200">{{$movie['title']}}</a>
                         <div class="flex items-center text-gray-400 font-sans text-sm">
-                            <ion-icon name="star" class=" text-yellow-500"></ion-icon>
+                            <span><x-star-icon></x-star-icon></span>
                             <span class="ml-1">Star</span>
                             <span class="ml-1">{{$movie['vote_average'] * 10}}%</span>
                             <span class="mx-2">|</span>
@@ -77,7 +77,7 @@
                     <div class="mt-2">
                         <a  href="{{route('movies.show', $movie['id'])}}" class=" text-lg hover:text-gray-200">{{$movie['title']}}</a>
                         <div class="flex items-center text-gray-400 font-sans text-sm">
-                            <ion-icon name="star" class=" text-yellow-500"></ion-icon>
+                            <span><x-star-icon></x-star-icon></span>
                             <span class="ml-1">Star</span>
                             <span class="ml-1">{{$movie['vote_average'] * 10}}%</span>
                             <span class="mx-2">|</span>
@@ -107,7 +107,7 @@
                     <div class="mt-2">
                         <a  href="{{route('movies.show', $movie['id'])}}" class=" text-lg hover:text-gray-200">{{$movie['title']}}</a>
                         <div class="flex items-center text-gray-400 font-sans text-sm">
-                            <ion-icon name="star" class=" text-yellow-500"></ion-icon>
+                            <span><x-star-icon></x-star-icon></span>
                             <span class="ml-1">Star</span>
                             <span class="ml-1">{{$movie['vote_average'] * 10}}%</span>
                             <span class="mx-2">|</span>

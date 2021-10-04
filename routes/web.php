@@ -3,6 +3,7 @@
 use App\Http\Controllers\ActorController;
 use App\Http\Controllers\MovieController;
 use App\Http\Controllers\TvController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 
@@ -25,4 +26,25 @@ Route::view('creator', 'creator');
 
 Route::any('/{any}', function () {
     return redirect('/');
+});
+
+// Deployment
+Route::get('/view-cache', function () {
+    Artisan::call('view:cache');
+    return 'View cached';
+});
+
+Route::get('/config-cache', function () {
+    Artisan::call('config:cache');
+    return 'Config cached';
+});
+
+Route::get('/route-cache', function () {
+    Artisan::call('route:cache');
+    return 'Route cached';
+});
+
+Route::get('/cache-clear', function () {
+    Artisan::call('cache:clear');
+    return 'Cache cleared';
 });
