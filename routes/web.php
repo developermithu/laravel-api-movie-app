@@ -24,9 +24,9 @@ Route::get('/actors/{id}', [ActorController::class, 'show'])->name('actor.show')
 Route::view('about-project', 'about-project');
 Route::view('creator', 'creator');
 
-Route::any('/{any}', function () {
-    return redirect('/');
-});
+// Route::any('/{any}', function () {
+//     return redirect('/');
+// });
 
 // Deployment
 Route::get('/view-cache', function () {
